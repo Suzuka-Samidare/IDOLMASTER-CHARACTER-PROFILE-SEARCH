@@ -1,0 +1,8 @@
+#photo {
+  text-align: center;
+}
+
+#photo img{
+  max-width: 100vh;
+  max-height: 450px;
+}

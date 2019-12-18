@@ -1,0 +1,108 @@
+<div class="profile">
+  <mat-divider class="divider"></mat-divider>
+  <mat-list class="detail-left" style="padding-top: 0px;">
+    <mat-list-item *ngIf="profile.familyName !== null" class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">名前</span>
+      <span class="data" *ngIf="profile">
+        {{ profile.familyName }}{{ profile.givenName }}（{{ profile.familyNameKana }} {{ profile.givenNameKana }}）
+      </span>
+    </mat-list-item>
+    <mat-divider *ngIf="profile.familyName !== null" class="divider"></mat-divider>
+    <mat-list-item *ngIf="profile.alternateName !== null" class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">通称</span>
+      <span class="data" *ngIf="profile">
+        {{ profile.alternateName }}（{{ profile.alternateNameKana }}）
+      </span>
+    </mat-list-item>
+    <mat-divider *ngIf="profile.alternateName !== null" class="divider"></mat-divider>
+    <mat-list-item class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">年齢</span>
+      <span class="data" *ngIf="profile">{{ profile.age }}歳</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">誕生日</span>
+      <span class="data" *ngIf="profile">{{ profile.birthMonth }}月{{ profile.birthDay }}日</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">星座</span>
+      <span class="data" *ngIf="profile">{{ profile.constellation }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">性別</span>
+      <span class="data" *ngIf="profile">{{ profile.gender }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">身長</span>
+      <span class="data half-width-char" *ngIf="profile">{{ profile.height }}cm</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">体重</span>
+      <span class="data half-width-char" *ngIf="profile">{{ profile.weight }}kg</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">スリーサイズ</span>
+      <span class="data half-width-char" *ngIf="profile"> {{ profile.bust }} / {{ profile.waist }} / {{ profile.hip }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">利き手</span>
+      <span class="data" *ngIf="profile"> {{ profile.handedness }}</span>
+    </mat-list-item>
+    <mat-divider class="divider" *ngIf="innerWidth < 1125"></mat-divider>
+  </mat-list>
+
+  <mat-list class="detail-right" style="padding-top: 0px;">
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">血液型</span>
+      <span class="data" *ngIf="profile"> {{ profile.bloodType }}型</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">出身地</span>
+      <span class="data" *ngIf="profile"> {{ profile.birthPlace }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">特技</span>
+      <span class="data" *ngIf="profile">{{ profile.talent }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">好きなもの</span>
+      <span class="data" *ngIf="profile">{{ profile.favorite }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">趣味</span>
+      <span class="data" *ngIf="profile">{{ profile.hobby }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">タイプ</span>
+      <span class="data" *ngIf="profile">{{ profile.division }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">所属</span>
+      <span class="data half-width-char" *ngIf="profile">{{ profile.title }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label cv">CV</span>
+      <span class="data" *ngIf="profile">{{ profile.cv }}</span>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item  class="row" style="height: 100%; min-height: 26px;">
+      <span class="label">カラーコード</span>
+      <span class="data half-width-char" *ngIf="profile">#{{ profile.color }}</span>
+    </mat-list-item>
+  </mat-list>
+  <mat-divider class="divider"></mat-divider>
+</div>
+

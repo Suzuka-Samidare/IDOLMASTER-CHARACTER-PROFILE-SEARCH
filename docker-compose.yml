@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  client:
+    build: ./client
+    container_name: "angular-app"
+    ports:
+      - "7650:4200"
+    volumes:
+      - ./client:/app
+  api:
+    build: ./api
+    container_name: "custom-search-api"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./api:/api
+
+    

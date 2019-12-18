@@ -1,0 +1,14 @@
+<app-header
+  [colorCode]="colorCode"
+  style="margin: 0;">
+</app-header>
+
+<app-form-single-textfield
+  [placeholder]="'検索アイドル名'"
+  (clickEmit)="fetchIdol($event)">
+</app-form-single-textfield>
+
+<app-result-data-list
+  [profile]="profile"
+  [illustrationUrl]="illustrationUrl">
+</app-result-data-list>

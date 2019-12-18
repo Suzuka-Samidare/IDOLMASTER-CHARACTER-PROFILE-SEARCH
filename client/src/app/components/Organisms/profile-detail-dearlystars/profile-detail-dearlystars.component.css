@@ -1,0 +1,55 @@
+.profile {
+  padding: 0px 10px;
+}
+
+.detail-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 48vw;
+  min-width: 400px;
+  padding-right: 10px;
+}
+
+.detail-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 48vw;
+  min-width: 400px;
+}
+
+.mat-list-item {
+  height: 100%;
+}
+
+.row {
+  min-height: 48px;
+}
+
+.label {
+  background-color: gray;
+  width: 23%;
+  min-width: 96px;
+  max-width: 110px;
+  padding: 1px 10px;
+  margin: 0px 8px auto 0px;;  
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+
+.cv {
+  padding: 4px 10px;
+}
+
+.data {
+  width: 70%;
+  margin: 1px 0px auto 0px;
+}
+
+.data.half-width-char {
+  margin: 3px 0px auto 0px;
+}
+
+.divider {
+  margin: 8px 0px
+}

@@ -1,0 +1,7 @@
+FROM python:3.7
+RUN mkdir /bottle
+COPY search_idol_image.py /bottle
+COPY requirements.txt /bottle
+WORKDIR /bottle
+RUN pip install -r /bottle/requirements.txt
+CMD python search_idol_image.py
