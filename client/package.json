@@ -23,7 +23,7 @@
     "@angular/platform-browser": "^8.2.14",
     "@angular/platform-browser-dynamic": "^8.2.14",
     "@angular/router": "^8.2.14",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "core-js": "^2.6.11",
     "rxjs": "^6.5.3",
     "serialize-javascript": "^2.1.2",
